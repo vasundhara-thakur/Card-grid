@@ -1,0 +1,91 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+width: 100%;
+height: 100%;
+background-color: rgb(194, 189, 189);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+.card{
+    width: 350px;
+    background-color: rgba(150, 165, 197, 0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px black;
+    transition: all ease-in-out 0.3s;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid rgb(42, 3, 116);
+    border-left-color: rgb(164, 134, 219);
+}
+
+.card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .info h2{
+    font-size: 24px;
+    white-space: nowrap;
+}
+.card .info h3{
+    font-size: 20px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    color: rgb(42, 3, 116);
+}
+
+.card p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.card .tags{
+    color: rgb(83, 83, 83);
+    font-size: 14px;
+}
+.card button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 50px;
+    margin: 0 8px;
+    border: 1px solid rgb(42, 3, 116);
+}
+.card .btns .message{
+    background-color: #ecebebd8;
+    color: rgb(42, 3, 116);
+}
+
+.card .btns .connect{
+    background-color: rgb(42, 3, 116);
+    color: #ecebeb;
+}
+
+.card button:hover{
+    scale: 1.10;
+    transition: all 0.3s;
+}
