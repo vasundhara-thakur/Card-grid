@@ -88,4 +88,4 @@ connection.forEach(connect => {
         connect.innerText = "Follow";
       }
   });
-});s
+});
